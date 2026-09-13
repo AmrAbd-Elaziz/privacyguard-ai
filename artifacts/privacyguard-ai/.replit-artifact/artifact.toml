@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "PrivacyGuard AI"
+description = "A frontend-only enterprise privacy and security assessment workspace for GDPR and ISO/IEC 27001:2022, with linked assets, assessments, controls, risks, workflows, and reports."
+version = "1.0.0"
+id = "artifacts/privacyguard-ai"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21181
+
+[services.development]
+run = "pnpm --filter @workspace/privacyguard-ai run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/privacyguard-ai", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/privacyguard-ai/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21181"
+BASE_PATH = "/"

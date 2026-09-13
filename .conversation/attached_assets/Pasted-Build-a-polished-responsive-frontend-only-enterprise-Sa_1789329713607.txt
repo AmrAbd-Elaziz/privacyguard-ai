@@ -1,0 +1,506 @@
+Build a polished, responsive, frontend-only enterprise SaaS application called:
+
+PrivacyGuard AI
+Enterprise Privacy & Security Assessor
+
+Use the 9 uploaded screenshots as the exact visual references for their corresponding pages. Preserve their dark navy cybersecurity design system, compact spacing, bright blue borders, rounded cards, subtle gradients, PG logo, sidebar footer mountain artwork, typography, icons, search header, and overall enterprise quality.
+
+This is a privacy and security assessment platform limited to:
+- GDPR
+- ISO/IEC 27001:2022
+
+Do not add NIST, CIS, PCI DSS, SOC 2, Tool Configuration, Evidence Management, Control Gaps, or a separate Remediation page.
+
+Use only synthetic enterprise demo data. Do not use real company or personal data.
+
+GLOBAL SHELL — MUST BE IDENTICAL ON EVERY PAGE
+
+Brand:
+- Logo: blue rounded-square “PG” icon.
+- Name: PrivacyGuard AI
+- Subtitle: Enterprise Privacy & Security Assessor
+
+Top header:
+- Global search placeholder: “Search assets, risks, controls...”
+- Notification icon
+- Profile: “PrivacyGuard AI” / “Enterprise”
+- Dark navy background with subtle blue borders.
+
+Sidebar navigation, exact order:
+1. Dashboard
+2. Workflows
+3. Risk Register
+4. Data Inventory
+5. Controls & Compliance
+6. Control Map
+7. Assessments
+8. Reports
+9. AI Assistant
+
+Sidebar footer:
+“Built for a more private tomorrow.”
+“GDPR | ISO/IEC 27001:2022”
+
+All sidebar items must navigate correctly using client-side routes. Highlight the active page.
+
+IMPORTANT DATA MODEL
+
+The platform revolves around two connected records:
+
+1. Asset
+- A business system, application, database, SaaS service, vendor, or technical asset.
+- Includes name, owner, business purpose, environment, data location, processors/third parties, and optional attachment.
+
+2. Assessment
+- Always linked to an existing Asset.
+- Is the primary place to upload and assess files:
+  TXT, CSV, XLSX, DOCX, PDF.
+- After an assessment, the platform automatically produces:
+  - detected data categories
+  - classification
+  - calculated risks
+  - GDPR and ISO control mappings
+  - workflow context
+  - report-ready outputs
+
+Use realistic mock data and local frontend state only. Do not build a real backend or external API integration yet.
+
+DATA CLASSIFICATIONS
+
+Use these classifications:
+- Internal
+- Confidential
+- Restricted PII
+- Sensitive PII
+- Unknown
+
+Use data categories:
+- Personal Data
+- Usage Data
+- Support Data
+- Sensitive Data
+- Financial Data
+- Employee Data
+- Business Confidential Data
+- Technical Security Data
+
+PAGE 1 — DASHBOARD
+
+Follow the Dashboard screenshot exactly.
+
+Title:
+“Enterprise Privacy & Security Assessment Workspace”
+
+Subtitle:
+“Discover. Assess. Decide. Report.”
+
+Four KPI cards only:
+- Linked assets: 18
+- Assessments: 12
+- Calculated risks: 24, with “8 high priority”
+- Mapped controls: 36
+
+Middle left:
+“Data classification distribution”
+- Donut chart
+- Internal: 6 / 33%
+- Confidential: 5 / 28%
+- Restricted PII: 4 / 22%
+- Sensitive PII: 2 / 11%
+- Unknown: 1 / 6%
+- Link: “View data inventory”
+
+Middle right:
+“Assessment lifecycle”
+1. Asset registered
+2. Assessment uploaded
+3. Data classified
+4. Risks & controls calculated
+5. Report generated
+
+Bottom:
+“Recent assessment activity”
+Show six compact asset cards:
+- Customer Portal
+- HR Database
+- Vendor Email Service
+- Finance Reporting
+- Marketing Website
+- Employee Devices
+
+Each card shows linked assessments, highest classification, calculated risk, and current workflow stage.
+
+PAGE 2 — WORKFLOWS
+
+Follow the selected Workflow screenshot exactly.
+
+Title:
+“Workflows”
+
+Subtitle:
+“Track assessment follow-up across linked assets.”
+
+This page is workflow tracking only. Do not add AI actions, evidence, action plans, task creation, or separate remediation tracking.
+
+Top metrics:
+- Active workflows: 8
+- In review: 3
+- Closed: 12
+
+Main section:
+“Workflow Register”
+
+Columns:
+- Workflow
+- Linked asset
+- Linked assessment
+- Classification
+- Calculated risk
+- Control map
+- Owner
+- Remediation
+- Status
+- Closure
+- Status
+- Last updated
+
+Important interaction:
+- Remediation column contains a selectable dropdown:
+  Ongoing / Partial / Completed / Lifetime
+- The Status column next to it is a read-only colored badge that automatically reflects the selected remediation value.
+- Closure column contains a separate selectable dropdown:
+  Open / Partial / Completed / Lifetime
+- The Status column next to it is a read-only colored badge that automatically reflects the selected closure value.
+
+Use rows:
+- Customer Portal
+- HR Database
+- Vendor Email Service
+
+No Add Workflow button.
+
+PAGE 3 — RISK REGISTER
+
+Follow the Risk Register screenshot exactly.
+
+Title:
+“Risk Register”
+
+Subtitle:
+“Calculated privacy and security risks from linked assets and assessments.”
+
+At the top show:
+- Label: “Calculated automatically”
+- Export button only
+- No “Add risk” button
+
+Include search and filters:
+- All severity
+- All classifications
+- All owners
+- All frameworks
+
+Risk table columns:
+- Risk ID
+- Risk title
+- Linked asset
+- Linked assessment
+- Classification
+- Likelihood
+- Impact
+- Inherent score
+- Owner
+- Mapped controls
+- Ask AI
+
+Use risks:
+- PRIV-001: Privileged access lacks MFA
+- PRIV-002: Retention period not defined
+- PRIV-003: Third-party processor review required
+- PRIV-004: Sensitive support attachments
+
+Right-side selected risk panel:
+- High calculated risk badge
+- Why it was calculated
+- Linked context
+- Mapped controls
+- Control Map summary
+- “Ask AI for guidance” button
+
+Do not include SLA, due dates, treatment plans, evidence, re-test, status updates, or remediation actions on this page.
+
+PAGE 4 — DATA INVENTORY
+
+Use the uploaded Data Inventory screenshot as reference.
+
+Purpose:
+A consolidated view of all Assets and their linked Assessments.
+
+Include:
+- Search
+- Classification filters
+- Asset type filters
+- Owner filters
+- Table or card list of Assets
+- Asset name
+- Asset type
+- Owner
+- Environment
+- Linked assessments
+- Highest classification
+- Calculated risk
+- Third parties/processors
+- Last updated
+
+Include an “Add Asset” modal:
+- Asset name
+- Asset type
+- Business owner
+- Business purpose
+- Environment
+- Data location
+- Third parties/processors
+- Optional attachment upload
+
+The attachment is optional. The main file analysis belongs in Assessments.
+
+Show a clear relationship between an Asset and linked Assessment records.
+
+PAGE 5 — CONTROLS & COMPLIANCE
+
+Follow the Controls & Compliance screenshot exactly.
+
+Title:
+“Controls & Compliance”
+
+Subtitle:
+“Policies, control mapping, and practical implementation guidance.”
+
+Left panel:
+“Policy & Control Library”
+- Search
+- Filters: All / GDPR / ISO/IEC 27001
+- GDPR controls:
+  - Article 5 — Principles relating to processing of personal data
+  - Article 25 — Data protection by design and by default
+  - Article 28 — Processor
+  - Article 30 — Records of processing activities
+  - Article 32 — Security of processing
+- ISO/IEC 27001:2022:
+  - A.5.34 — Privacy and protection of PII
+  - A.8.10 — Information deletion
+  - A.8.12 — Data leakage prevention
+  - A.8.15 — Logging
+  - A.8.24 — Use of cryptography
+
+Right panel for GDPR Article 32:
+Tabs:
+- Overview
+- Guide Summary
+- Linked Assets & Assessments
+- Related Controls
+
+Overview cards:
+- Why this matters?
+- When does it apply?
+- Risk addressed
+- Technical measures
+- Organizational measures
+- Practical example
+
+Technical measures may mention:
+Encryption, MFA, least privilege, logging, segmentation, WAF/firewalls, DLP, PAM, secure configuration.
+
+Bottom:
+- Linked assets & assessments
+- Ask AI about this control
+
+Do not show Evidence, remediation plans, or Control Gaps.
+
+PAGE 6 — CONTROL MAP
+
+Use the uploaded Control Map screenshot as reference.
+
+Purpose:
+An explainable mapping page that connects:
+Data classification → Calculated risk → GDPR/ISO control → Practical guidance.
+
+Include:
+- Left side list of mapped controls
+- Main details panel for selected control
+- Framework badge
+- Control reference
+- Title
+- Why do we use it?
+- When should it be used?
+- Risk addressed
+- Technical measures
+- Organizational measures
+- Practical example
+- Linked assets and assessments
+- “Ask AI about this control”
+
+Use “Control Map” everywhere. Never use “Control Gaps”.
+
+PAGE 7 — ASSESSMENTS
+
+Use the uploaded Assessments screenshot as reference.
+
+This is the main assessment and upload page.
+
+Title:
+“Assessments”
+
+Subtitle:
+“Upload approved assessment material to identify data, classification, risks, and control mappings.”
+
+Main workflow:
+1. Select linked Asset
+2. Upload supported document
+3. Analyze
+4. Display assessment result
+
+Supported files:
+- TXT
+- CSV
+- XLSX
+- DOCX
+- PDF
+
+Upload area:
+- Large drag-and-drop zone
+- File format chips
+- Clear privacy notice:
+  “Raw uploaded content remains within the approved assessment environment.”
+
+Assessment result should show:
+- Detected data categories
+- Classification
+- Personal/sensitive data indicators
+- Calculated risks
+- GDPR mappings
+- ISO/IEC 27001:2022 mappings
+- Linked asset information
+- AI guidance entry point
+
+Use sample assessments:
+- Customer Portal Privacy Assessment
+- HR Data Classification Assessment
+- Vendor Processing Assessment
+
+No separate evidence section.
+
+PAGE 8 — REPORTS
+
+Follow the Reports screenshot exactly.
+
+Title:
+“Reports”
+
+Subtitle:
+“Clear, decision-ready outputs from linked assets and assessments.”
+
+Four KPI cards only:
+- Privacy posture: 82/100
+- Calculated risks: 24
+- Assets assessed: 18
+- Control coverage: 78%
+
+Main section:
+“Report Library”
+
+Table columns:
+- Report name
+- Type
+- Linked asset
+- Frameworks
+- Owner
+- Generated date
+- Status
+- Actions
+
+Actions:
+- Preview
+- Download PDF
+
+Report Builder right panel:
+- Report scope
+- Report type
+- Frameworks:
+  GDPR
+  ISO/IEC 27001:2022
+- Include workflow status toggle
+- Generate report button
+
+Recent reports list.
+
+At the bottom:
+“Ask AI to draft executive summary”
+- Button: “Draft executive summary”
+- AI creates a concise, non-binding summary only.
+- No automatic action is performed.
+
+Do not show evidence packs, control gaps, or remediation tracker.
+
+PAGE 9 — AI ASSISTANT
+
+Follow the uploaded AI Assistant screenshot exactly.
+
+Title:
+“PrivacyGuard AI Assistant”
+
+Subtitle:
+“Local AI Advisor for Privacy & Security Assessments.”
+
+Top privacy banner:
+“Your data stays private”
+“Only approved, masked metadata is sent to your local Ollama model.”
+“Raw uploaded file content is never sent to AI.”
+Badge:
+“Runs locally with Ollama”
+“Your data. Your environment.”
+
+Layout:
+- Left: Context selector and question input
+- Center: AI response
+- Right: Recent consultations
+
+Context can be:
+- Risk
+- Asset
+- Control
+- Assessment
+- Report
+
+Suggested prompts:
+- What are the key risks?
+- What controls apply?
+- How can I address this?
+- Show assessment steps
+
+AI response sections only:
+- Assessment Insight
+- Classification Explanation
+- Calculated Risk Guidance
+- Control Map Guidance
+- Suggested Next Step
+- Important Limitation
+
+Important:
+- AI provides guidance only.
+- AI must not change workflow statuses.
+- AI must not create remediation records.
+- AI must not create evidence records.
+- AI guidance is not legal advice.
+
+DESIGN AND IMPLEMENTATION REQUIREMENTS
+
+- Implement all nine pages and working sidebar navigation.
+- Use React, TypeScript, Tailwind CSS, shadcn/ui, Lucide icons, and Recharts.
+- Build reusable components for sidebar, top header, page cards, data tables, badges, filters, modals, upload panels, and AI response cards.
+- Use responsive behavior for desktop, tablet, and mobile.
+- Use local mock data and React state.
+- Dropdowns in Workflows must update their matching status badges live.
+- Filters, search boxes, tabs, modals, row selection, uploads, and report preview buttons should feel interactive in the frontend.
+- Keep the UI clean, consistent, enterprise-grade, and production-ready.
+- Do not invent extra pages or features outside this specification.
