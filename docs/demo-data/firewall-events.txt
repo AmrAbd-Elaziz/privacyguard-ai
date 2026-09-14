@@ -1,0 +1,2 @@
+Firewall security event log
+IP address, device ID and security event telemetry for network monitoring.

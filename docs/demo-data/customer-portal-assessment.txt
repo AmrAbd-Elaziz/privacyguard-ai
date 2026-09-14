@@ -1,0 +1,4 @@
+Customer Portal assessment
+The portal stores customer name, email, phone number, account data, and support ticket attachments.
+Notifications are delivered by a cloud email provider.
+Customer data is encrypted in transit and at rest.

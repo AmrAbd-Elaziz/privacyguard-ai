@@ -1,0 +1,2 @@
+Customer Portal
+Customer name, email, phone number and account data are processed for support requests.

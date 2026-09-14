@@ -47,3 +47,24 @@ Thumbs.db
 # Replit
 .cache/
 .local/
+
+
+# PrivacyGuard local runtime and patch backups
+backend/.venv/
+backend/privacyguard.db
+backend/uploads/
+artifacts/privacyguard-ai/dist/
+artifacts/privacyguard-ai/src/*.bak*
+artifacts/privacyguard-ai/src/*.before-*
+artifacts/privacyguard-ai/src/*.controls-*
+README.md.bak-before-privacyguard
+*Zone.Identifier
+*.pyc
+__pycache__/
+
+# Additional PrivacyGuard local backups and generated samples
+artifacts/privacyguard-ai/src/lib/*.bak*
+artifacts/privacyguard-ai/public/privacyguard-report-*.pdf
+
+# Backend patch backups
+backend/app/*.bak*
