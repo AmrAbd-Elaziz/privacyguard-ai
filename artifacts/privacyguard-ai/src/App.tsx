@@ -161,7 +161,7 @@ function Brand({
         data-testid="button-sidebar-logo"
       >
         <img
-          src="/privacyguard-logo.png"
+          src={`${import.meta.env.BASE_URL}privacyguard-logo.png`}
           alt="PrivacyGuard"
           className="pg-brand-logo"
         />
@@ -248,7 +248,7 @@ function Sidebar({
       {!collapsed && (
         <div className="sidebar-footer pg-sidebar-footer-art">
           <img
-            src="/privacyguard-sidebar-footer.png"
+            src={`${import.meta.env.BASE_URL}privacyguard-sidebar-footer.png`}
             alt="Built for a more private tomorrow"
             className="pg-sidebar-footer-image"
           />
